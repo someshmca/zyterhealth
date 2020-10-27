@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/home-cards.js"></script>
+  <style>
+    body.home-page-body{
+      background-color: #F5FBFF;
+    }
+  </style>
+</head>
+<body class="home-page-body">
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
+  <a class="navbar-brand" href="#">Zyter Health</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1"
+    aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainHeaderMenu1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Claims</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Doctor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Member ID Card</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Health Record</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Available Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Health Education</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-bell"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="headerUserDrop" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="headerUserDrop">
+          <a class="dropdown-item" href="#">My Account</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
+  
+<div class="container-fluid main-content-body homepage-body">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-5 col-12">
+          <div class="my-schedule-wrap">
+            <div class="my-schedule-image">              
+            </div>
+          <h2 class="my-schedule-h2">
+            My Schedule
+          </h2>
+          <div class="schedule-area">
+              <div class="schedule-box">
+                <div class="schedule-date">
+                  <span class="schedule-day">27</span>
+                  <span class="schedule-month">Mar</span>
+                </div>
+                <div class="schedule-details">
+                  <div class="schedule-time">1:00 PM</div>
+                  <div class="scheduled-doctor">
+                    <div class="doctor-image">
+                      <img src="images/doctor-icon1.jpg"/>
+                    </div>
+                    <div class="doctor-details">
+                      <h5>Meeting with Dr. John</h5>
+                      <div class="doctor-contact-action">
+                        <span class="fas fa-comment"></span> 
+                        <span class="fas fa-phone"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end of schedule-box -->
+              <div class="schedule-box">
+                <div class="schedule-date">
+                  <span class="schedule-day">27</span>
+                  <span class="schedule-month">Mar</span>
+                </div>
+                <div class="schedule-details">
+                  <div class="schedule-time">6:30 PM</div>
+                  <div class="scheduled-doctor">
+                    <div class="doctor-image">
+                      <img src="images/doctor-icon2.png"/>
+                    </div>
+                    <div class="doctor-details">
+                      <h5>Meeting with Dr. Jessy</h5>
+                      <div class="doctor-contact-action">
+                        <span class="fas fa-comment"></span> 
+                        <span class="fas fa-phone"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end of schedule-box -->
+          </div> <!-- end of schedule-area -->          
+          <div class="book-appointment">
+            <button class="btn btn-primary">Book an Appointment</button>
+          </div>
+        </div> <!-- end of my-schedule-wrap -->
+        </div>
+        <div class="col-lg-8 col-md-7 col-sm-7 col-12 p-0">
+          <div class="home-cards-area" id="homeCardsArea">
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/doctor-icon3.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Chat with Doctor(PCP)</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-primary">
+                  Chat Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/doctor-icon4.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Nurse Advice Line</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Chat Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/ID-Card-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>ID Card</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  View
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/ZDoc-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>ZDoc</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Book Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/covid19-screener.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Covid-19 Screener</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Check Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/find-doctor-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Find a Doctor</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Find Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/home-monitering-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>In Home Monitoring</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Read More
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/urgent-care-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Find Urgent Care</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Read More
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/pharmacy-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Find a Pharmacy</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Find Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/symptoms-checker-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Symptoms Checker</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Check Now
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/Wellness-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Wellness Program</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Read More
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/contact-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Contact Us</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Call Us
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+          </div>
+        </div>
+      </div>
+      <div class="spotlight-area">
+        <h2>In the Spotlight</h2>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-1.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Coronavirus: What Veterans Need to Know</h3>
+                <p>
+                  Concerns about COVID-19 can be stressful for many people, and it’s understandable to feel anxious. Let VA help. We have answers to your questions.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-2.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Help Stop the Spread</h3>
+                <p>
+                  VA is following the CDC’s lead to bring you the most up-to-date information about the coronavirus. We can also provide you information on how to lower your risk of getting coronavirus, as well as what you should do if you feel sick.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-3.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Sharing Health Records Safely</h3>
+                <p>
+                  Starting April 17, 2020, your community providers who are in VA’s network and participate in VHIE will be able to securely view your VA electronic health information. Previously, you had to complete a form to authorize this electronic sharing.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-4.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Veterans: Call Before Visiting Your VA Facility</h3>
+                <p>
+                  Got a fever, cold, cough, or flu-like symptoms? Are you worried that you have a viral illness? Sometimes the last thing you want to do is to get out of the house to see the doctor, potentially exposing yourself (and others) to more potential bugs and viruses. Learn how you can use VA Video Connect to talk to your doctor.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div> <!-- end of spotlight-area -->
+    </div>
+    <div class="col-md-3">
+      <div class="imp-links-area">
+        <h2>Important Links</h2>
+        <ul>
+          <li>
+            <a href="#">Find a Provider</a>
+          </li>
+          <li>
+            <a href="#">Find a Pharmacy</a>
+          </li>
+          <li>
+            <a href="#">Find a Doctor</a>
+          </li>
+          <li>
+            <a href="#">Account Settings</a>
+          </li>
+          <li>
+            <a href="#">Request an ID Card</a>
+          </li>
+          <li>
+            <a href="#">Find a Provider</a>
+          </li>
+        </ul>
+      </div>
+      <div class="home-right-ad-area">
+        <div class="ad-image-wrap">
+          <img src="images/get-app-ad.png" height="250px"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="container-fluid main-footer">
+    <div class="footer-links-area">
+      <div class="links-box">
+        <ul>
+          <li>About</li>
+          <li><a href="#">Site Overview</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Help &mp; User Guides</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy & Security</a></li>
+          <li><a href="#">Terms and Conditions</a></li>                
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Policies</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Web Policies</a></li>
+          <li><a href="#">FOIA</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">System Use</a></li>               
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Important Links</li>
+          <li><a href="#">Care Home</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Emergency Care</a></li>
+          <li><a href="#">Facility and Service Locator</a></li>              
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Quick Links</li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">eBenefits</a></li>
+          <li><a href="#">TriCare</a></li>
+          <li><a href="#">Dental Insurance</a></li>
+          <li><a href="#">Find a Form</a></li>               
+        </ul>
+      </div>
+      <div class="footer-subscribe-box">
+        <h5>Subscribe to Receive My Healthecare Updates</h5>
+        <form>
+          <div class="form-group">
+            <label for="emailSubscribe">Email address</label>
+            <input class="form-control" id="emailSubscribe"/>
+          </div>
+          <button class="btn btn-warning">Subscribe</button>
+        </form>
+      </div>
+    </div> 
+    <div class="footer-copyright-area">
+      <div class="copyright-text">
+        Copyright &copy; 2020 Zyter&reg; Inc
+      </div>
+      <div class="copyright-links-area">
+        <a href="#">Terms &amp; Conditions</a>|
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
