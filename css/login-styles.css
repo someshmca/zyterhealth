@@ -1,0 +1,141 @@
+.login-container{
+    background: url("../images/login/login-page-bg.png") 0 0 no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+}
+.login-main-row{
+    height: 100vh;
+}
+.login-links-area{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
+}
+.login-links{
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.81);
+    width: 600px;
+    margin: 20px;
+}
+.login-links h2{
+    color: #2B2B2B;
+    font-size: 1.4rem;
+}
+.login-links ul{
+    margin: 0;
+    padding: 0;
+}
+.login-links ul li{
+    color: #1388BC;
+    position: relative;
+    padding: 5px 10px 5px 25px;
+    margin: 0 0 5px 0;
+}
+.login-links ul li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/login/tick.png") 0 0 no-repeat;
+    background-size: 20px 20px;
+    top: 5px;
+    left: 0;
+}
+.login-form-area{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    height: 100vh;
+    position: relative;
+}
+.login-form-logo{
+    text-align: center;
+    margin: 5px 0;
+}
+.login-form-logo img{
+    max-width: 180px;
+}
+.login-form-area h4{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding: 0;
+}
+.login-form-area h5{
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 0;
+}
+.login-form{
+    margin: 15px 0 15px 0;
+}
+.login-form .form-group{
+    margin-bottom: 10px;
+}
+.login-form .form-group label{
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.login-form .form-group .form-control{
+    font-size: 13px;
+    height: 35px;
+}
+.login-form .signup-btn{
+    width: 100%;
+}
+.login-form .custom-control-label{
+    font-size: 13px;
+}
+.login-form .custom-control-label::before {
+    position: absolute;
+    top: 2px;
+    left: -23px;
+}
+.agree-text{
+    margin: 5px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 200px;
+}
+.agree-text p{
+    font-size: 11px;
+}
+.hc-click-area{
+    max-width: 200px;
+    display: flex;
+    margin: 5px auto;
+}
+.hc-image{
+    width: 43px;
+    height: 43px;
+}
+.hc-image img{
+    width: 35px;
+    height: 35px;
+}
+.hc-content{
+    padding: 0;
+}
+.hc-content p{
+    font-size: 12px;
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+    line-height: normal;
+}
+.hc-content a{
+    font-size: 12px;
+    color: #1388BC;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+}
