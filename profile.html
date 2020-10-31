@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile-page-styles.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
+  <a class="navbar-brand" href="index.html">Zyter Health - My Profile</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1"
+    aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainHeaderMenu1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Claims</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="my-doctor.html">My Doctor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="member-id-card.html">Member ID Card</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Health Record</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Available Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Health Education</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-bell"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="headerUserDrop" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="headerUserDrop">
+          <a class="dropdown-item" href="profile.html">My Account</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
+  
+<div class="container-fluid main-content-body homepage-body">
+    <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                  <div class="profile-about-area">
+                      <div class="profile-avatar-area">
+                          <div class="profile-avatar-bg"></div>
+                          <div class="profile-avatar">
+                              <h5>Mike</h5>
+                              <img src="./images/profile1.png"/>
+                          </div>
+                      </div>
+                      <p>Email ID <br/>mike@info.com</p>
+                      <p>Mobile <br/>+1 123 456 7893</p>
+                      <p>Home Phone <br/>+1 240 456 5321</p>
+                      <div class="profile-address-area">
+                          <p>Address <br/>
+                              85 Bay Drive, New Port Richey, FL 34653
+                          </p>
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Personal</div>
+                              <div class="pcol">
+                                  <span>80%</span> Completed
+                                  <progress max="100" value="80"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Emergency Contact</div>
+                              <div class="pcol">
+                                  <span>50%</span> Completed
+                                  <progress max="100" value="50"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Health Record</div>
+                              <div class="pcol">
+                                  <span>50%</span> Completed
+                                  <progress max="100" value="50"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8 col-12">
+                    <div class="profile-details-container">
+                        <div class="profile-details-header">
+                            <h2>My Profile</h2>
+                            <div class="percent-completed">
+                                <p><span>42%</span> Completed</p>
+                                <progress max="100" value="42"></progress>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#personal">Personal</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#emergencyContact">
+                                Emergency Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#symptoms">
+                                Symptoms</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#medication">
+                              Medication</a>
+                          </li>
+                        </ul>
+                      
+                        <!-- Tab panes -->
+                        <div class="tab-content profile-tab-content">
+                          <div id="personal" class="container tab-pane active"><br>
+                            <h3>Personal</h3>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-12">                          
+                                  <div class="form-group">
+                                      <label for="firstName">First Name:</label>
+                                      <input type="text" class="form-control" id="firstName" Value="Mike" name="fname">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="memberIdNo">Member ID No:</label>
+                                      <input type="text" class="form-control" id="memberIdNo" value="34523546635345" name="memberid">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="gender">Gender:</label>
+                                      <input type="text" class="form-control" id="gender" value="Male" name="gender">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="weight">Weight:</label>
+                                      <input type="text" class="form-control" id="weight" value="120Lbs" name="weight">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="dfdfdf">Email:</label>
+                                      <input type="email" class="form-control" id="email" value="mike@info.com" name="email">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="address1">Address 1:</label>
+                                      <input type="text" class="form-control" id="address1" value="85 Bay Drive" name="address1">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="city">City:</label>
+                                      <input type="text" class="form-control" id="city" value="85 Bay Drive" name="city">
+                                  </div>
+                              </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">                       
+                                  <div class="form-group">
+                                      <label for="lastName">Last Name:</label>
+                                      <input type="text" class="form-control" id="lastName" value="William" name="lname">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="age">DOB / Age:</label>
+                                      <input type="text" class="form-control" id="age" value="34 years" name="age">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="height">Height:</label>
+                                      <input type="text" class="form-control" id="height" value="5.5''" name="height">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="skinType">Skin Type:</label>
+                                      <input type="text" class="form-control" id="skinType" value="Whte" name="skintype">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="mobile">Mobile:</label>
+                                      <input type="text" class="form-control" id="mobile" value="+1 (123) 456 7893" name="mobile">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="address2">Address 2:</label>
+                                      <input type="text" class="form-control" id="address2" value="New Port Richey" name="address2">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="state">State:</label>
+                                      <input type="text" class="form-control" id="state" value="state" name="state">
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="personal-btns">
+                                <button class="btn btn-secondary" type="button">
+                                    Cancel
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    Update
+                                </button>
+                            </div>
+                          </div>
+                          <div id="emergencyContact" class="container tab-pane fade"><br>
+                            <h3>Emergency Contact</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                          <div id="symptoms" class="container tab-pane fade"><br>
+                            <h3>Symptoms</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                          </div>
+                          <div id="medication" class="container tab-pane fade"><br>
+                            <h3>Medication</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+            <div class="imp-links-area">
+              <h2>Important Links</h2>
+              <ul>
+                <li>
+                  <a href="#">Find a Provider</a>
+                </li>
+                <li>
+                  <a href="#">Find a Pharmacy</a>
+                </li>
+                <li>
+                  <a href="find-doctor.html">Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="#">Account Settings</a>
+                </li>
+                <li>
+                  <a href="#">Request an ID Card</a>
+                </li>
+                <li>
+                  <a href="#">Find a Provider</a>
+                </li>
+              </ul>
+            </div>
+            <div class="home-right-ad-area">
+              <div class="ad-image-wrap">
+                <img src="images/get-app-ad.png" height="250px"/>
+              </div>
+            </div>            
+        </div>
+    </div>
+</div>
+  <footer class="container-fluid main-footer">
+    <div class="footer-links-area">
+      <div class="links-box">
+        <ul>
+          <li>About</li>
+          <li><a href="#">Site Overview</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Help &mp; User Guides</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy & Security</a></li>
+          <li><a href="#">Terms and Conditions</a></li>                
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Policies</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Web Policies</a></li>
+          <li><a href="#">FOIA</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">System Use</a></li>               
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Important Links</li>
+          <li><a href="#">Care Home</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Emergency Care</a></li>
+          <li><a href="#">Facility and Service Locator</a></li>              
+        </ul>
+      </div>
+      <div class="links-box">
+        <ul>
+          <li>Quick Links</li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">eBenefits</a></li>
+          <li><a href="#">TriCare</a></li>
+          <li><a href="#">Dental Insurance</a></li>
+          <li><a href="#">Find a Form</a></li>               
+        </ul>
+      </div>
+      <div class="footer-subscribe-box">
+        <h5>Subscribe to Receive My Healthecare Updates</h5>
+        <form>
+          <div class="form-group">
+            <label for="emailSubscribe">Email address</label>
+            <input class="form-control" id="emailSubscribe"/>
+          </div>
+          <button class="btn btn-warning">Subscribe</button>
+        </form>
+      </div>
+    </div> 
+    <div class="footer-copyright-area">
+      <div class="copyright-text">
+        Copyright &copy; 2020 Zyter&reg; Inc
+      </div>
+      <div class="copyright-links-area">
+        <a href="#">Terms &amp; Conditions</a>|
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
