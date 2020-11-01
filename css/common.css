@@ -22,6 +22,18 @@ progress{
 .main-header-navbar{
 	background: #002C77;
 	color: #ffffff;
+	min-height: 70px;
+}
+.main-logo{
+	display: inline-block;
+	width: 130px;
+	height: 33px;
+	background: url("../images/logo.png") no-repeat;
+	cursor: pointer;
+	margin-right: 40px;
+}
+.main-header-navbar li{
+	margin: 0 7.5px;
 }
 .main-header-navbar li, .main-header-navbar a, .main-header-navbar .fa{
 	color: #ffffff;
