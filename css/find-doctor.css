@@ -16,8 +16,8 @@
     font-size: 16px;
 }
 .doctor-search{
-    margin: 5px;
-    padding: 0 20px;
+    margin: 5px 20px;
+    position: relative;
 }
 .fd-box{
     background: #ffffff;
@@ -27,7 +27,13 @@
     box-shadow: 0 0 6px rgba(226, 226, 226,0.8);
     width: 190px;
 }
-
+.doctor-search .fa-search{
+    color: rgba(119, 136, 153, 0.4);
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+}
 .fd-image{
     width: 130px;
     margin: 4px auto;
