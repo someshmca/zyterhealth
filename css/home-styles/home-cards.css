@@ -22,25 +22,27 @@
     }
 }
 .home-card{
-    /* width: 200px; */
-    height: 147px;
+    /* width: 200px; 
+    height: 120px;*/
     border: 1px solid #E3E3E3;
-    margin: 5px;
+    margin: 5px 5px 15px 5px;
     box-shadow: 0px 3px 6px #00000029;
+    width: 145px;
 }
 .home-card-content{
-    height: 107px;
+    /* height: 107px; */
     background: #ffffff;
 }
 .home-card-icon{
     text-align: center;
-    height: 71px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 .home-card-icon img{
-    max-height: 65px;
+    max-height: 100%;
 }
 .home-card-icon-text{
     padding: 3px;
@@ -48,15 +50,16 @@
 }
 .home-card-icon-text p{
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
 }
 .home-card-footer{
-    height: 40px;
+    height: 25px;
 }
 .home-card-footer .btn{
-    height: 40px;
+    height: 25px;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
+    padding-top: 2px;
 }
 .home-card-footer .btn.btn-light{
     background: #F0F0F0;
