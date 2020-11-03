@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Zyter Health :: Member ID Card</title>
+  <title>Zyter Health - Book an Appointment</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/id-card-styles.css">
+  <link rel="stylesheet" href="css/book-appointment.css">
   <script src="js/all.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -34,7 +34,7 @@
       <li class="nav-item">
         <a class="nav-link" href="my-doctor.html">My Doctor</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="member-id-card.html">Member ID Card</a>
       </li>
       <li class="nav-item">
@@ -75,109 +75,63 @@
 </nav>
 <!--/.Navbar -->
   
-<div class="container-fluid main-content-body homepage-body">
-  <div class="row">
-    <div class="col-lg-10 col-md-9 col-sm-9 col-12">
-        <div class="id-card-area">
-            <div class="id-card-box">
-                <header>
-                    <img src="./images/logo-white.png" class="id-card-logo"/>
-                </header>
-                <div class="id-card-body">
-                    <div class="id-details-grid">
-                        <div class="id-col bordercol">
-                            <p>Member #</p>
-                            <p>34523546635345</p>
-                        </div>
-                        <div class="id-col bordercol">
-                            <p>Name</p>
-                            <p>Mike</p>
-                        </div>
-                        <div class="id-col bordercol">
-                            <p>DOB</p>
-                            <p>04/07/1983</p>
-                        </div>
-                        <div class="id-col">
-                            <p>PCP/PMP</p>
-                            <p>Test Provider</p>
-                        </div>
-                        <div class="id-col">
-                            <p> </p>
-                            <p> </p>
-                        </div>
-                        <div class="id-col">
-                            <p>PCP/PMP Phone</p>
-                            <p>+1 204 766 2312</p>
-                        </div>
-                        <div class="id-col">
-                            <p>IHH provider Name</p>
-                            <p>Zyterhealth</p>
-                        </div>
-                        <div class="id-col">
-                            <p> </p>
-                            <p> </p>
-                        </div>
-                        <div class="id-col">
-                            <p>IHH provider Phone</p>
-                            <p>+1 204 323 2122</p>
-                        </div>
-                    </div>
-                </div>
+<div class="container-fluid main-content-body">
+    <div class="row">
+      <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+    <div class="cm-header">
+        <h2>Book an Appointment</h2>
+    </div>
+    <div class="booking-form">
+        <form>
+            <div class="form-group">
+                <span class="form-label">Your Name</span>
+                <input class="form-control" type="text" placeholder="Enter your Name">
             </div>
-            <div class="id-card-box">
-                <header>
-                    <h5>In Case of an Emergency: Call 911 or go to the nearest emergency room or other
-                        appropriate setting.</h5>
-                </header>
-                <div class="id-card-body">
-                    <div class="id-card-backside">
-                        <p><strong>Member Services</strong>: +1 855 655 4623</p>
-                        <p><strong>Member Services TTY</strong>: +711</p>
-                        <p><strong>Behavioral Health</strong> : +1 855 655 4623</p>
-                        <p><strong>24 Hour Nurse Advice</strong> : +1 855 655 4623</p>
-                        <p><strong>Dental Service</strong> : +1 855 655 9999</p>
-                        <p><strong>Website</strong> : www.zyterhealth.com</p>
-                    </div>
-                </div>
+            <div class="form-group">
+                <span class="form-label">Email</span>
+                <input class="form-control" type="text" placeholder="Enter your Email">
             </div>
-            <div class="id-card-buttons">
-              <button type="button" class="btn btn-primary">Mail me the ID Card</button>
-              <button type="button" class="btn btn-primary">Download</button>
-              <button type="button" class="btn btn-primary">Print</button>
+            <div class="form-group">
+                <span class="form-label">Mobile No</span>
+                <input class="form-control" type="text" placeholder="Mobile Number">
             </div>
-        </div>
+            <div class="form-btn">
+                <button class="submit-btn">
+                Book an Appointment</button>
+            </div>
+        </form>
+    </div>
     </div>
     <div class="col-lg-2 col-md-3 col-sm-3 col-12">
-      <div class="imp-links-area">
-        <h2>Important Links</h2>
-        <ul>
-          <li>
-            <a href="#">Find a Provider</a>
-          </li>
-          <li>
-            <a href="find-pharmacy.html">Find a Pharmacy</a>
-          </li>
-          <li>
-            <a href="find-doctor.html">Find a Doctor</a>
-          </li>
-          <li>
-            <a href="#">Account Settings</a>
-          </li>
-          <li>
-            <a href="#">Request an ID Card</a>
-          </li>
-          <li>
-            <a href="#">Find a Provider</a>
-          </li>
-        </ul>
-      </div>
-      <div class="home-right-ad-area">
-        <div class="ad-image-wrap">
-          <img src="images/get-app-ad.png" height="250px"/>
+        <div class="imp-links-area">
+          <h2>Important Links</h2>
+          <ul>
+            <li>
+              <a href="#">Find a Provider</a>
+            </li>
+            <li>
+              <a href="find-pharmacy.html">Find a Pharmacy</a>
+            </li>
+            <li>
+              <a href="find-doctor.html">Find a Doctor</a>
+            </li>
+            <li>
+              <a href="#">Account Settings</a>
+            </li>
+            <li>
+              <a href="#">Request an ID Card</a>
+            </li>
+            <li>
+              <a href="#">Find a Provider</a>
+            </li>
+          </ul>
+        </div>
+        <div class="home-right-ad-area">
+          <div class="ad-image-wrap">
+            <img src="images/get-app-ad.png" height="250px"/>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 </div>
   <footer class="container-fluid main-footer">
     <div class="footer-links-area">

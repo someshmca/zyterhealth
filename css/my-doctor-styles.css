@@ -51,6 +51,21 @@
     background-position: -105px 0;
     width: 25px;   
 }
+.my-doctor-btns{
+    margin: 0;
+}
+.my-doctor-btns .btn{
+    margin-left: 15px;
+}
+.my-doctor-btns .navigate-btn{
+    background: url("../images/navigate-icon.png") 3px 6px no-repeat;
+    padding-left: 23px;
+    background-size: 15px auto;
+    border: 0px solid transparent;
+}
+.my-doctor-btns .navigate-btn:hover{
+    color: #007bff;
+}
 .map-area{
     width: 100%;
     height: 300px;
