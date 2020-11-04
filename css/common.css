@@ -19,6 +19,9 @@ ul{
 progress{
 	width: 100%;
 }
+a.btn.btn-primary{
+	color: #ffffff;
+}
 .main-header-navbar{
 	background: #002C77;
 	color: #ffffff;
@@ -31,6 +34,16 @@ progress{
 	background: url("../images/logo.png") no-repeat;
 	cursor: pointer;
 	margin-right: 40px;
+}
+.welcome-user{
+	position: absolute;
+	right: 25px;
+	top: 8px;
+	color: #ffffff;
+	font-size: 12px;
+}
+.welcome-user span{
+	color: #ffffff;
 }
 .main-header-navbar li{
 	margin: 0 7.5px;
@@ -47,6 +60,9 @@ progress{
 .main-header-navbar .dropdown-menu a{
 	color: #555555;
 	font-size: 14px;
+}
+.main-header-navbar .nav-flex-icons{
+	margin-top: 15px;
 }
 .cm-header{
     display: flex;

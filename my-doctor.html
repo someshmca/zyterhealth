@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/my-doctor-styles.css">
+  <link rel="stylesheet" href="css/book-appointment.css">
   <script src="js/all.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -130,8 +131,8 @@
             </div>
                
             <div class="my-doctor-btns">
-              <a class="btn btn-primary" href="book-appointment.html">
-                  Book an appointment
+              <a class="btn btn-primary" data-target="#bookAppointment" data-toggle="modal">
+                Book an Appointment
               </a>
               <a class="btn btn-outline-primary navigate-btn" href="#">
                   Navigate
@@ -150,9 +151,9 @@
       <div class="imp-links-area">
         <h2>Important Links</h2>
         <ul>
-          <li>
+          <!-- <li>
             <a href="#">Find a Provider</a>
-          </li>
+          </li> -->
           <li>
             <a href="find-pharmacy.html">Find a Pharmacy</a>
           </li>
@@ -242,6 +243,44 @@
       </div>
     </div>
   </footer>
-
+  <div class="modal fade text-center" id="bookAppointment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header cm-header">
+          <h2>Book an Appointment</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="booking-form">
+              <form>
+                  <div class="form-group">
+                      <span class="form-label">Appointment with</span>
+                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Date</span>
+                          <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Time</span>
+                          <input class="form-control" type="time" placeholder="Mobile Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                      <button class="submit-btn">
+                      Book an Appointment</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

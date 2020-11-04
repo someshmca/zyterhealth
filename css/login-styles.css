@@ -90,6 +90,7 @@
 }
 .login-form .signup-btn{
     width: 100%;
+    color: #ffffff;
 }
 .login-form .custom-control-label{
     font-size: 13px;
@@ -137,4 +138,17 @@
     width: 100%;
     bottom: 5px;
     left: 0;
+}
+#forgotPwdSuccess{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 4vh 15px;
+   margin-bottom: 5vh;
+}
+#forgotPwdSuccess h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 15px 25px 15px;
 }

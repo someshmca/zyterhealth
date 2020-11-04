@@ -3,6 +3,16 @@
 @import url("../book-appointment.css");
 @import url("../nurse-advice-line.css");
 
+.welcome-user{
+	position: absolute;
+	right: 25px;
+	top: 5px;
+	color: #ffffff;
+	font-size: 12px;
+}
+.welcome-user span{
+	color: #ffffff;
+}
 .spotlight-area{
 	background: #ffffff;
 	padding: 8px;
