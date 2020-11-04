@@ -50,12 +50,14 @@
 }
 
 /* Breadcrups CSS */
-
+#step2body, #step3body{
+    display: none ;
+}
 .arrow-steps .step {
     font-size: 14px;
     text-align: center;
     color: #fff;
-    cursor: default;
+    cursor: pointer;
     margin: 0 3px;
     padding: 0 0 0 30px;
     height: 36px;
@@ -159,4 +161,14 @@
 }
 .sc-steps-content li a{
     color: #004C82;
+}
+.sc-section{
+    margin: 5px 0 10px 0;
+}
+.sc-section h5{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 2px 0;
+    padding: 0;
+    color: #3D3D3D;
 }

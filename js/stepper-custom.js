@@ -2,7 +2,7 @@
 /**/
 
 jQuery( document ).ready(function() {
-		
+	/*	
     var back =jQuery(".prev");
     var	next = jQuery(".next");
     var	steps = jQuery(".step");
@@ -25,5 +25,5 @@ jQuery( document ).ready(function() {
             }
         })		
     });
-
+*/
 })

@@ -48,6 +48,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Health Education</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bill-payments.html">Bill Payments</a>
+      </li>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">
@@ -86,17 +89,17 @@
                 </div>
                 <div class="stepper-area">
                     <div class="arrow-steps clearfix">
-                        <div class="step current"> 
+                        <div class="step current" id="step1"> 
                             <span>Step 1: Choose a symptom</span>
                         </div>
-                        <div class="step"> <span>Step 2: Select related factors</span> </div>
-                        <div class="step"> <span> Step 3: View possible causes</span> </div>
+                        <div class="step" id="step2"> <span>Step 2: Select related factors</span> </div>
+                        <div class="step" id="step3"> <span> Step 3: View possible causes</span> </div>
                     </div>
                     <!-- <div class="sc-nav clearfix">
                         <a href="#" class="prev">Previous</a>
                         <a href="#" class="next pull-right">Next</a>
                     </div>     -->
-                    <div class="sc-steps-content">
+                    <div class="sc-steps-content" id="step1body">
                         <div class="sc-steps-col">
                             <h5>Adult Symptoms</h5>
                             <ul>
@@ -156,6 +159,99 @@
                                 <li><a href="#">Wheezing</a></li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="sc-steps-content" id="step2body">
+                      <div class="sc-steps-col">
+                        <div class="sc-section">
+                        <h5>Knee Pain</h5>
+                        <p>Find possible causes of Knee pain based on specific factors. Check one or more features on this page that apply to your symptom</p>
+                        </div>
+                        <div class="sc-section">
+                          <h5>Plan best described as </h5>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk1" name="plansection">
+                            <label class="custom-control-label" for="chk1">Dull or achy</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk2" name="plansection">
+                            <label class="custom-control-label" for="chk2">Sharp or severe</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk3" name="plansection" checked>
+                            <label class="custom-control-label" for="chk3">Gradually worsening</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk4" name="plansection">
+                            <label class="custom-control-label" for="chk4">Sudden</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk5" name="plansection">
+                            <label class="custom-control-label" for="chk5">Persistant</label>
+                          </div>
+                        </div>
+                        <div class="sc-section">
+                          <h5>Located </h5>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="lchk1" name="plansection">
+                            <label class="custom-control-label" for="lchk1">Along one or both sides of the Knee</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="lchk2" name="plansection">
+                            <label class="custom-control-label" for="lchk2">Behind the knee</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="lchk3" name="plansection">
+                            <label class="custom-control-label" for="lchk3">Around the kneecap</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="lchk4" name="plansection" checked>
+                            <label class="custom-control-label" for="lchk4">In the knee joint</label>
+                          </div>
+                        </div>
+                        <div class="sc-section">
+                          <h5>Triggered by </h5>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="trgedschk1" name="plansection">
+                            <label class="custom-control-label" for="trgedchk1">Everyday activities</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="trgedchk2" name="plansection" checked>
+                            <label class="custom-control-label" for="trgedchk2">Overuse</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="trgedchk3" name="plansection">
+                            <label class="custom-control-label" for="trgedchk3" >Injury</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk4" name="plansection">
+                            <label class="custom-control-label" for="chk4">Sudden</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="chk5" name="plansection">
+                            <label class="custom-control-label" for="chk5">Persistant</label>
+                          </div>
+                        </div>
+                        <div class="sc-section">
+                          <h5>Worsened by</h5>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="worsechk1" name="plansection" checked>
+                            <label class="custom-control-label" for="worsechk1">MovementDull or achy</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="worsechk2" name="plansection">
+                            <label class="custom-control-label" for="worsechk2">Rest or inactivity</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="worsechk3" name="plansection" checked>
+                            <label class="custom-control-label" for="worsechk3">Prolonged sitting or standing</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sc-steps-content" id="step3body">
+                      <div class="sc-steps-col">
+                        Step 3 
+                      </div>
                     </div>
                 </div>          
             </div>
@@ -256,6 +352,28 @@
       </div>
     </div>
   </footer>
-
+  <script>
+    $(document).ready(function(){
+      
+        $("#step1body").show();
+        $("#step2body").hide();
+        $("#step3body").hide();
+        $("#step1").click(function(){          
+          $("#step1body").show();          
+          $("#step2body").hide();
+          $("#step3body").hide();
+        })
+        $("#step2").click(function(){          
+          $("#step2body").show();
+          $("#step1body").hide();
+          $("#step3body").hide();
+        })
+        $("#step3").click(function(){          
+          $("#step3body").show();
+          $("#step2body").hide();
+          $("#step1body").hide();
+        })
+    });
+  </script>
 </body>
 </html>
