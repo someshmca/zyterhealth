@@ -51,20 +51,20 @@
     background-position: -105px 0;
     width: 25px;   
 }
+.mdc-area{
+    position: relative;
+}
 .my-doctor-btns{
     margin: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    right: 20px;
+    bottom: 5vh;
 }
 .my-doctor-btns .btn{
     margin-left: 15px;
-}
-.my-doctor-btns .navigate-btn{
-    background: url("../images/navigate-icon.png") 3px 6px no-repeat;
-    padding-left: 23px;
-    background-size: 15px auto;
-    border: 0px solid transparent;
-}
-.my-doctor-btns .navigate-btn:hover{
-    color: #007bff;
 }
 .map-area{
     width: 100%;

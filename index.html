@@ -132,7 +132,9 @@
               </div> <!-- end of schedule-box -->
           </div> <!-- end of schedule-area -->          
           <div class="book-appointment">
-            <button class="btn btn-primary">Book an Appointment</button>
+            <a class="btn btn-primary" data-target="#bookAppointment" data-toggle="modal">
+              Book an Appointment
+            </a>
           </div>
         </div> <!-- end of my-schedule-wrap -->
         </div>
@@ -163,7 +165,7 @@
                 </div>
               </div>
               <div class="home-card-footer">
-                <a class="btn btn-light" href="nurse-advice-line.html">
+                <a class="btn btn-light" data-target="#nurseAdviceLine" data-toggle="modal">
                   Chat Now
                 </a>
               </div>
@@ -488,5 +490,139 @@
     </div>
   </footer>
 
+  <div class="modal fade text-center" id="bookAppointment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header cm-header">
+          <h2>Book an Appointment</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="booking-form">
+              <form>
+                  <div class="form-group">
+                      <span class="form-label">Appointment with</span>
+                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Date</span>
+                          <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Time</span>
+                          <input class="form-control" type="time" placeholder="Mobile Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                      <button class="submit-btn">
+                      Book an Appointment</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade text-center nal-modal" id="nurseAdviceLine">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h2>Nurse Advice Line</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="nal-content">
+            <h1 class="nal-helpline">
+              For emergency call 611
+            </h1>
+            <h4 class="text-primary">
+              24 hours Nurse Advice Line
+            </h4>
+            <p>
+              Highly trained nurses are available 24 hours a day, 7 days a week. They can speak with you in your language. They will help you to get the care you need. 
+            </p>
+            <fieldset>
+              <legend>Select a State</legend>
+              <select  class="form-control">
+                <option>Florida FL</option>
+              </select>
+            </fieldset>
+            <div class="text-right my-2">
+              <button class="btn btn-outline-primary">
+                Call 711
+              </button>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary">
+                Call (888) 665-4621
+              </button>
+            </div>
+            <hr/>
+            <div class="nal-qa">
+              <h2 class="text-primary">
+                When should members goto an Urgent Care Center(UCC)?
+              </h2>
+              <p>Use a UCC for a non-life threatening condition sucn a: </p>
+              <ul>
+                <li>Sore throat, Cough or runny nose</li>
+                <li>Muscle Strains/Sprains</li>
+                <li>Minor Outs/Burns</li>
+                <li>Earache</li>
+                <li>Flashes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><div class="modal fade text-center" id="bookAppointment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header cm-header">
+          <h2>Book an Appointment</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="booking-form">
+              <form>
+                  <div class="form-group">
+                      <span class="form-label">Appointment with</span>
+                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Date</span>
+                          <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Time</span>
+                          <input class="form-control" type="time" placeholder="Mobile Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                      <button class="submit-btn">
+                      Book an Appointment</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
