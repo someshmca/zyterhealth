@@ -139,16 +139,30 @@
     bottom: 5px;
     left: 0;
 }
-#forgotPwdSuccess{
+.forgot-success{
    display: flex;
    align-items: center;
    justify-content: center;
    padding: 4vh 15px;
    margin-bottom: 5vh;
 }
-#forgotPwdSuccess h3{
+.forgot-success h3{
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     padding: 15px 15px 25px 15px;
+    color: #008000;
+}
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+a{
+    color: #0078D3;
+    cursor: pointer;
+}
+.flex-sb span{
+    color: #0078D3;
+    cursor: pointer;
 }

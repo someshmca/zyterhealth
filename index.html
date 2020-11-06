@@ -172,7 +172,7 @@
               </div>
               <div class="home-card-footer">
                 <a class="btn btn-light" data-target="#nurseAdviceLine" data-toggle="modal">
-                  Chat Now
+                  View
                 </a>
               </div>
             </div> <!-- end of home-card -->
@@ -413,13 +413,10 @@
             <a href="find-doctor.html">Find a Doctor</a>
           </li>
           <li>
-            <a href="#">Account Settings</a>
+            <a href="profile.html">Account Settings</a>
           </li>
           <li>
-            <a href="#">Request an ID Card</a>
-          </li>
-          <li>
-            <a href="#">Find a Provider</a>
+            <a href="member-id-card.html">Request an ID Card</a>
           </li>
         </ul>
       </div>
@@ -496,46 +493,6 @@
     </div>
   </footer>
 
-  <div class="modal fade text-center" id="bookAppointment">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        
-        <div class="modal-header cm-header">
-          <h2>Book an Appointment</h2>
-          <button type="button" class="close" data-dismiss="modal">X</button>
-        </div>
-        <div class="modal-body">
-          <div class="booking-form">
-              <form>
-                  <div class="form-group">
-                      <span class="form-label">Appointment with</span>
-                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                          <span class="form-label">Select Date</span>
-                          <input class="form-control" type="date">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                          <span class="form-label">Select Time</span>
-                          <input class="form-control" type="time" placeholder="Mobile Number">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-btn">
-                      <button class="submit-btn">
-                      Book an Appointment</button>
-                  </div>
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   
   <div class="modal fade text-center nal-modal" id="nurseAdviceLine">
     <div class="modal-dialog">
@@ -558,19 +515,18 @@
             </p>
             <fieldset>
               <legend>Select a State</legend>
-              <select  class="form-control">
-                <option>Florida FL</option>
+              <select  class="form-control" id="nurseSelectUS" onchange="selectStateUS(this.value)">
               </select>
             </fieldset>
             <div class="text-right my-2">
-              <button class="btn btn-outline-primary">
+              <h5 class="text-secondary">
                 Call 711
-              </button>
+              </h5>
             </div>
             <div class="form-group">
-              <button class="btn btn-primary">
-                Call (888) 665-4621
-              </button>
+              <h5 class="text-dark" id="statePhoneNo">
+                Call (888) 665-4601
+              </h5>
             </div>
             <hr/>
             <div class="nal-qa">
@@ -601,7 +557,7 @@
         </div>
         <div class="modal-body">
           <div class="booking-form">
-              <form>
+            <div id="bookingFormArea">
                   <div class="form-group">
                       <span class="form-label">Appointment with</span>
                       <input class="form-control" type="text" placeholder="Enter Doctor's Name">
@@ -621,15 +577,28 @@
                     </div>
                   </div>
                   <div class="form-btn">
-                      <button class="submit-btn">
+                      <button class="submit-btn" id="bookAppointmentBtn">
                       Book an Appointment</button>
                   </div>
-              </form>
-          </div>
+            </div> <!-- end of bookingFormArea-->
+            <div id="bookingSuccess">
+                <h2>Your Appointment is confirmed</h2>
+            </div>
+          </div> <!-- end of booking-form div -->
         </div>
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function(){
+      $("#bookingSuccess").hide();
+      $("#bookAppointmentBtn").click(function(){
+        $("#bookingFormArea").hide(100);
+        $("#bookingSuccess").show(100);
+      });
+    })
+  </script>
+  <script src="./js/custom-zyter.js"></script>
 </body>
 
 </html>

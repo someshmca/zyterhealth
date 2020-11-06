@@ -11,7 +11,10 @@
     width: 400px; */
     padding: 10px;
 }
-
+#bookingSuccess h2{
+	font-size: 1.4rem;
+	color: #008000;
+}
 .booking-form .form-group {
 	position: relative;
     margin-bottom: 20px;

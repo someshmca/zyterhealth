@@ -12,6 +12,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom-login.js"></script>
 </head>
 <body>
     <div class="container-fluid login-container">
@@ -37,22 +38,69 @@
                     <div class="login-form-logo">
                         <img src="./images/login/logo.png"/>
                     </div>
-                    <h4>Sign In</h4>
-                    <h5>New User?
-                        <a href="register.html">Register</a>
+                    <div id="loginArea">
+                        <h4>Sign In</h4>
+                        <h5>New User?
+                            <a href="#" onclick="registerHere()">Register</a>
+                        </h5>
+                        <div class="login-form">
+                            <div class="form-group">
+                                <label>
+                                Username
+                                </label>
+                                <input type="text" class="form-control" name="fullname" value="Robert"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters" value="Robert123"/>
+                            </div>                        
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="emailupdates">
+                                <label class="custom-control-label" for="customCheck">
+                                    Sign up for email updates.
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <a type="button" class="btn btn-primary signup-btn" href="index.html">
+                                    Sign In
+                                </a>   
+                            </div>
+                            <div class="flex-sb">
+                                <span onclick="forgotPassword('forgotPwdStates')">Forgot Password?</span>
+                                <span onclick="forgotUsername('forgotUserStates')">Forgot Username?</span>
+                            </div>
+                        </div>
+                        <div class="agree-text">
+                            <p>
+                                By continuing, you agree to accept our Privacy Policy &amp; Terms of Service.
+                            </p>
+                        </div>
+                </div> <!-- end of loginArea-->
+                <div id="registerArea">
+                    <h4>Sign Up</h4>
+                    <h5>Already have an account?
+                        <a href="#" onclick="backToLogin()">Login</a>
                     </h5>
                     <div class="login-form">
                         <div class="form-group">
                             <label>
-                               Username
+                                Full Name
                             </label>
-                            <input type="text" class="form-control" name="fullname" value="Robert"/>
+                            <input type="text" class="form-control" name="fullname"/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input type="text" class="form-control" name="email"/>
                         </div>
                         <div class="form-group">
                             <label>
                                 Password
                             </label>
-                            <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters" value="Robert123"/>
+                            <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters"/>
                         </div>                        
                         <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="customCheck" name="emailupdates">
@@ -61,12 +109,9 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <a type="button" class="btn btn-primary signup-btn" href="index.html">
-                                Sign In
-                            </a>                            
-                            <h5>
-                                <a href="forgot-password.html">Forgot Password?</a>
-                            </h5>
+                            <button type="button" class="btn btn-primary signup-btn">
+                                Sign Up
+                            </button>
                         </div>
                     </div>
                     <div class="agree-text">
@@ -74,6 +119,87 @@
                             By continuing, you agree to accept our Privacy Policy &amp; Terms of Service.
                         </p>
                     </div>
+                </div> <!-- end of registerArea-->
+                <div id="forgotPasswordArea">
+                    <h4>Forgot Password?</h4>
+                    <h5>Please enter your email address registered with us</a>
+                    </h5>
+                
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>
+                               Email ID
+                            </label>
+                            <input type="text" class="form-control" name="emailId" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Date of Birth
+                            </label>
+                            <input type="date" class="form-control" name="dob"  value=""/>
+                        </div> 
+                        <div class="form-group">
+                            <label>
+                                State
+                            </label>
+                            <select class="form-control" name="state" id="forgotPwdStates" onchange="selectStateUS(this.value)">  
+                            </select>
+                        </div>     
+                        <div class="form-group">
+                            <a type="button" class="btn btn-primary signup-btn"  onclick="forgotPwdSuccess()">
+                                Send
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                <div id="forgotPwdSuccess" class="forgot-success">
+                    <div class="container-fluid text-center">
+                        <h3>Your password has been mailed to the email address registered with us</h3>
+                        <a type="button" class="btn btn-primary" onclick="backToLogin()">
+                            Back to Login
+                        </a>
+                    </div>
+                </div>
+                <div id="forgotUsernameArea">
+                    <h4>Forgot Username?</h4>
+                    <h5>Please enter your email address registered with us</a>
+                    </h5>
+                
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>
+                               Email ID
+                            </label>
+                            <input type="text" class="form-control" name="emailId" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Date of Birth
+                            </label>
+                            <input type="date" class="form-control" name="dob"  value=""/>
+                        </div> 
+                        <div class="form-group">
+                            <label>
+                                State
+                            </label>
+                            <select class="form-control" name="state" id="forgotUserStates" onchange="selectStateUS(this.value)">  
+                            </select>
+                        </div>     
+                        <div class="form-group">
+                            <a type="button" class="btn btn-primary signup-btn" onclick="forgotUserSuccess()" >
+                                Send
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                <div id="forgotUsernameSuccess" class="forgot-success">
+                    <div class="container-fluid text-center">
+                        <h3>Your Username has been mailed to the email address registered with us</h3>
+                        <a type="button" class="btn btn-primary" onclick="backToLogin()">
+                            Back to Login
+                        </a>
+                    </div>
+                </div>
                     <!-- hc stannds for healthcare -->
                     <div class="hc-click-area"> 
                         <div class="hc-image">
