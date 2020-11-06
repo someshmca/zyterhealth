@@ -103,8 +103,8 @@
                         <p>English, Spanish</p>
                     </div>
                     <div class="my-doctor-contact-links">
-                        <a href="#" class="md-message"></a>
-                        <a href="#" class="md-phone"></a>
+                        <a href="chat-with-doctor.html" class="md-message"></a>
+                        <!-- <a href="#" class="md-phone"></a> -->
                         <a href="#" class="md-video"></a>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
         </div>
         <div class="modal-body">
           <div class="booking-form">
-              <form>
+            <div id="bookingFormArea">
                   <div class="form-group">
                       <span class="form-label">Appointment with</span>
                       <input class="form-control" type="text" placeholder="Enter Doctor's Name">
@@ -270,14 +270,26 @@
                     </div>
                   </div>
                   <div class="form-btn">
-                      <button class="submit-btn">
+                      <button class="submit-btn" id="bookAppointmentBtn">
                       Book an Appointment</button>
                   </div>
-              </form>
-          </div>
+            </div> <!-- end of bookingFormArea-->
+            <div id="bookingSuccess">
+                <h2>Your Appointment is confirmed</h2>
+            </div>
+          </div> <!-- end of booking-form div -->
         </div>
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function(){
+      $("#bookingSuccess").hide();
+      $("#bookAppointmentBtn").click(function(){
+        $("#bookingFormArea").hide(100);
+        $("#bookingSuccess").show(100);
+      });
+    })
+  </script>
 </body>
 </html>
