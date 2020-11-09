@@ -1,9 +1,9 @@
 $(document).ready(
     function(){
-      // alert("ojkkjdfkd");
-      alert('hi git 2222');
+      // alert("ok ok");
        $("#mainHeader").load("main-header.html");
 
        $("#mainRightSection").load("main-right-section.html");
     }
+    
 )
