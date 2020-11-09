@@ -1,0 +1,27 @@
+
+.covid-19-screen-area{
+    padding: 15px;
+}
+.covid-19-screen-area p{
+    line-height: 24px;
+}
+.covid-19-screen-area footer{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.covid-19-screen-area .btn{
+    margin-left: 15px;
+}
+.covid-test-1{
+    display: flex;
+    justify-content: space-between;
+}
+.covid-carea{
+    padding: 5px;
+    max-width: 48%;
+}
+.covid-checks-area{
+    padding: 5px;
+}
+

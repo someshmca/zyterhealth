@@ -189,3 +189,36 @@ a.btn.btn-primary{
 .copyright-links-area a:last-child{
 	margin-right: 0;
 }
+.contact-member-services{
+	padding: 2px 0;
+}
+.contact-member-services a{
+	color: #0078D3 !important;
+	cursor: pointer;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.playstore-links{
+	clear: both;
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+}
+.playstore-links a{
+	display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 3px;
+	position: relative;
+	width: 128px;
+	height: 40px;
+}
+
+.playstore-links a.appleicon{
+	background: url("../images/apple-store.png") 0 0 no-repeat;
+	background-size: 128px 40px;
+}	
+.playstore-links a.gplayicon{
+	background: url("../images/google-play-store.png") 0 0 no-repeat;
+	background-size: 128px 40px;
+}	
