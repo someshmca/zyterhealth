@@ -127,7 +127,7 @@ a.btn.btn-primary{
 }
 .footer-links-area{
 	padding: 15px 20px;
-	background:#525557 ;
+	background:#525557;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
 }
@@ -204,11 +204,14 @@ a.btn.btn-primary{
 	padding: 5px;
 	justify-content: center;
 }
+.playstore-links.main-footer-bg{
+	background:#525557;
+}
 .playstore-links a{
 	display: inline-block;
     cursor: pointer;
     padding: 0;
-    margin: 3px;
+    margin: 3px 6px;
 	position: relative;
 	width: 128px;
 	height: 40px;
