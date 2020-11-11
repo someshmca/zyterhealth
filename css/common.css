@@ -6,6 +6,9 @@ html, body, a, i, span, div, table, tr, th, td, input, select, button, form, hea
 }
 body{	
 	background-color: #F5FBFF;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 250px;
 }
 p{
 	margin: 0;
@@ -15,6 +18,9 @@ a, a .fa, .fas{
 }
 ul{
 	list-style-type: none;
+}
+input, button, a, img{
+	outline: none;
 }
 progress{
 	width: 100%;
@@ -124,6 +130,9 @@ a.btn.btn-primary{
 .main-footer{
 	margin: 0;
 	padding: 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
 .footer-links-area{
 	padding: 15px 20px;
