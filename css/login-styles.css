@@ -1,14 +1,13 @@
 
 body{
-    padding-bottom: 0 !important;
-    position: initial !important;
+    padding-bottom: 96px;
+    position: relative;
 }
 .login-container{
     background: url("../images/login/login-page-bg.png") 0 0 no-repeat;
     background-size: cover;
-    height: 100%;
+    height: calc(100vh - 96px);
     width: 100%;
-    min-height: 600px;
 }
 .login-container a{
     color: #0078D3;
@@ -18,9 +17,9 @@ body{
 }
 .login-links-area{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
-    height: 100vh;
+    height: calc(100vh - 96px);
     width: 100%;
 }
 .login-links{
@@ -56,7 +55,7 @@ body{
 .login-form-area{
     padding: 5px 20px;
     background: rgba(255, 255, 255, 0.92);
-    height: 100vh;
+    height: calc(100vh - 96px);
     position: relative;
 }
 .login-form-logo{
