@@ -87,3 +87,16 @@
     top: -2px;
     margin-right: 5px;
 }
+
+#checkboxError1{
+    display: none;
+}
+#checkboxError2{
+    display: none;
+}
+#checkboxError3{
+    display: none;
+}
+#checkboxError4{
+    display: none;
+}
